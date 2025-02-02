@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
     private float xRotation = 0f;
     private float gravity = -20f;
     private float jumpStrength = 2f;
-    private float groundCheckDistance = .2f;
+    private float groundCheckDistance = .49f;
     private float joystickUIMultiplier = 20f;
 
     private Vector2 moveInput;
@@ -142,7 +142,7 @@ public class PlayerController : MonoBehaviour
         float mouseSensChange;
         float currentSens;
         if (playerInput.currentControlScheme == "Keyboard&Mouse") {
-            mouseSensChange = .05f;
+            mouseSensChange = .001f;
             currentSens = Inputs.mouseSens;
         } else {
             mouseSensChange = 1;

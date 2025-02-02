@@ -10,6 +10,6 @@ public class Inputs : MonoBehaviour
 
     private void Update() {
         mouseSens = mouseSensitivitySlider.value;
-        controllerSens = controllerSensitivitySlider.value;
+        controllerSens = controllerSensitivitySlider.value * 0.04f;
     }
 }
